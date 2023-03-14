@@ -123,5 +123,3 @@ model.train(iterations=99000)
 model.compile("L-BFGS", loss_weights=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
 losshistory, train_state = model.train()
 dde.saveplot(losshistory, train_state, issave=True, isplot=True)
-
-
