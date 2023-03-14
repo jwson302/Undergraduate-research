@@ -1,0 +1,35 @@
+import numpy as np
+import matplotlib.pyplot as plt
+ 
+x = np.linspace(0, L, 256)
+y = np.linspace(-H, H, 256)
+t = 0.9
+ 
+X, Y = np.meshgrid(x, y)
+
+u = np.zeros((256, 256))
+v = np.zeros((256, 256))
+p = np.zeros((256, 256))
+
+for i in range(256):
+    for j in range(256):
+        profile = model.predict(np.array([X[i][j]/char_x, Y[i][j]/char_y, t/char_t]).reshape(1, -1))
+        u[i][j] = profile[0][0]*char_u
+        v[i][j] = profile[0][1]*char_v
+        p[i][j] = profile[0][2]*char_p
+
+        
+plt.streamplot(X, Y, u, v, density = 0.5, broken_streamlines=False)
+plt.title('Streamline plot at t = '+str(t))
+plt.xlabel('x')
+plt.ylabel('y')
+plt.xlim([0, L]) 
+plt.ylim([-H, H]) 
+plt.show()
+
+plt.contourf(X, Y, p, 100)
+plt.colorbar()
+plt.title('Pressure contour plot at t = '+str(t))
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
