@@ -26,7 +26,7 @@ $$\dot{\gamma} = \sqrt{2\left(\frac{\partial u}{\partial x}\right)^2 + 2\left(\f
 
 Carreau fluid model
 
-$$\eta\left(\dot{\gamma}\right) = \eta_\infty + (\eta_0 - \eta_\infty)\left(1 + \left(\lambda\dot{\gamma}\right)^2\right)^\frac{n-1}{2}$$
+$$\eta\left(\dot{\gamma}\right) = \eta_\infty + (\eta_0 - \eta_\infty)\left(1 + \left(\lambda\dot{\gamma}\right)^2\right)^\frac{n-1}{2}, n<1$$
 
 ## Boundary conditions
 
