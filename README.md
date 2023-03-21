@@ -11,10 +11,17 @@ x-direction momentum equation
 $$\rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} \right)
  = -\frac{\partial p}{\partial x}+2\frac{\partial}{\partial x}\left(\eta \frac{\partial u}{\partial x} \right) + \frac{\partial}{\partial y}\left(\eta \left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right)\right)$$
 
+$$= -\frac{\partial p}{\partial x} + \frac{\partial \eta}{\partial y}\left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right) + \eta\frac{\partial^2 u}{\partial y^2} + \eta\frac{\partial^2 v}{\partial x\partial y} + 2\frac{\partial \eta}{\partial x}\frac{\partial u}{\partial x} + 2\eta\frac{\partial^2 u}{\partial x^2}$$
+
+
 y-direction momentum equation
 
 $$\rho \left( \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v \frac{\partial v}{\partial y} \right)
 = -\frac{\partial p}{\partial y}+2\frac{\partial}{\partial y}\left(\eta \frac{\partial v}{\partial y} \right) + \frac{\partial}{\partial x}\left(\eta \left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right)\right)$$
+
+$$= -\frac{\partial p}{\partial y} + \frac{\partial \eta}{\partial x}\left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right) + \eta\frac{\partial^2 v}{\partial x^2} + \eta\frac{\partial^2 u}{\partial x\partial y} + 2\frac{\partial \eta}{\partial y}\frac{\partial v}{\partial y} + 2\eta\frac{\partial^2 v}{\partial y^2}$$
+
+
 
 Continuity equation
 
@@ -44,3 +51,22 @@ $$v(x=0, y, t) = 0$$
 
 $$p(x=L, y, t) = 0$$
 
+## Parameters in SI units
+
+$$H = 0.025$$
+
+$$\rho = 1500$$
+
+$$\eta_0 = 60$$
+
+$$\eta_\infty = 0.01$$
+
+$$\lambda = 0.8$$
+
+$$n = 0.5$$
+
+$$f = 4$$
+
+$$L = 0.5$$
+
+$$T = 1$$
