@@ -51,6 +51,10 @@ $$v(x=0, y, t) = 0$$
 
 $$p(x=L, y, t) = 0$$
 
+$$u(x, y, t=0) = u_{max}\left(1+\frac{y}{H}\right)\left(1-\frac{y}{H}\right)$$
+
+$$v(x, y, t=0) = 0$$
+
 ## Parameters in SI units
 
 $$H = 0.025$$
