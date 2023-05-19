@@ -57,13 +57,13 @@ $$v(x, y, t=0) = 0$$
 
 ## Parameters in SI units
 
-$$H = 0.025 m$$
+$$H = 0.025$$
 
-$$\rho = 1500 kg/m<sup>³</sup>$$
+$$\rho = 1500$$
 
-$$\eta_0 = 60 Pa<sub>s</sub>$$
+$$\eta_0 = 60$$
 
-$$\eta_\infty = 0.01 Pa<sub>s</sub>$$
+$$\eta_\infty = 0.01$$
 
 $$\lambda = 0.8$$
 
