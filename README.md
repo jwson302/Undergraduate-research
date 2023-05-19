@@ -61,9 +61,9 @@ $$H = 0.025 m$$
 
 $$\rho = 1500 kg/m<sup>³</sup>$$
 
-$$\eta_0 = 60$$
+$$\eta_0 = 60 Pa<sub>s</sub>$$
 
-$$\eta_\infty = 0.01$$
+$$\eta_\infty = 0.01 Pa<sub>s</sub>$$
 
 $$\lambda = 0.8$$
 
