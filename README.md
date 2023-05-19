@@ -57,7 +57,7 @@ $$v(x, y, t=0) = 0$$
 
 ## Parameters in SI units
 
-$$H = 0.025$$
+$$H = 0.025 m$$
 
 $$\rho = 1500$$
 
