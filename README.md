@@ -6,9 +6,9 @@
 
 ## Governing equations (2D channel)
 
-$u$ is x direction velocity, $v$ is y direction velocity, $p$ is pressure.
+$u$ is $x$ direction velocity, $v$ is $y$ direction velocity, $p$ is pressure.
 
-x-direction momentum equation
+$x$-direction momentum equation
 
 $$\rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} \right)
  = -\frac{\partial p}{\partial x}+2\frac{\partial}{\partial x}\left(\eta \frac{\partial u}{\partial x} \right) + \frac{\partial}{\partial y}\left(\eta \left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right)\right)$$
@@ -16,14 +16,12 @@ $$\rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + 
 $$= -\frac{\partial p}{\partial x} + \frac{\partial \eta}{\partial y}\left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right) + \eta\frac{\partial^2 u}{\partial y^2} + \eta\frac{\partial^2 v}{\partial x\partial y} + 2\frac{\partial \eta}{\partial x}\frac{\partial u}{\partial x} + 2\eta\frac{\partial^2 u}{\partial x^2}$$
 
 
-y-direction momentum equation
+$y$-direction momentum equation
 
 $$\rho \left( \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v \frac{\partial v}{\partial y} \right)
 = -\frac{\partial p}{\partial y}+2\frac{\partial}{\partial y}\left(\eta \frac{\partial v}{\partial y} \right) + \frac{\partial}{\partial x}\left(\eta \left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right)\right)$$
 
 $$= -\frac{\partial p}{\partial y} + \frac{\partial \eta}{\partial x}\left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right) + \eta\frac{\partial^2 v}{\partial x^2} + \eta\frac{\partial^2 u}{\partial x\partial y} + 2\frac{\partial \eta}{\partial y}\frac{\partial v}{\partial y} + 2\eta\frac{\partial^2 v}{\partial y^2}$$
-
-
 
 Continuity equation
 
@@ -82,23 +80,25 @@ $$L = 0.5$$
 
 ## Governing equations (cylindrical pipe)
 
-r-direction momentum equation
+$u$ is $z$ direction velocity, $v$ is $r$ direction velocity, $p$ is pressure.
 
-$$\rho \left( \frac{\partial v}{\partial t} + v \frac{\partial v}{\partial r} + u \frac{\partial v}{\partial z} \right)
- = -\frac{\partial p}{\partial r} + \eta \left(\frac{1}{r}\frac{\partial v}{\partial r} + \frac{\partial^2 v}{\partial r^2} + \frac{\partial^2 v}{\partial z^2} - \frac{v}{r^2}\right) + 2\frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial u}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial v}{\partial z}$$
-
-z-direction momentum equation
+$z$-direction momentum equation
 
 $$\rho \left( \frac{\partial u}{\partial t} + v \frac{\partial u}{\partial r} + u \frac{\partial u}{\partial z} \right) 
 = -\frac{\partial p}{\partial z} + \eta \left(\frac{1}{r}\frac{\partial u}{\partial r} + \frac{\partial^2 u}{\partial r^2} + \frac{\partial^2 u}{\partial z^2}\right) + 2\frac{\partial \eta}{\partial z}\frac{\partial u}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial u}{\partial r} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial z}$$
 
+$r$-direction momentum equation
+
+$$\rho \left( \frac{\partial v}{\partial t} + v \frac{\partial v}{\partial r} + u \frac{\partial v}{\partial z} \right)
+ = -\frac{\partial p}{\partial r} + \eta \left(\frac{1}{r}\frac{\partial v}{\partial r} + \frac{\partial^2 v}{\partial r^2} + \frac{\partial^2 v}{\partial z^2} - \frac{v}{r^2}\right) + 2\frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial u}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial v}{\partial z}$$
+
 Continuity equation
 
-$$\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 0$$
+$$\frac{\partial v}{\partial r} + \frac{\partial u}{\partial z} + \frac{v}{r} = 0$$
 
 Shear rate
 
-$$\dot{\gamma} = \sqrt{2\left(\frac{\partial u}{\partial x}\right)^2 + 2\left(\frac{\partial v}{\partial y}\right)^2 + \left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right)^2}$$
+$$\dot{\gamma} = \sqrt{2\left(\frac{v}{r}right\)^2+2\left(\frac{\partial u}{\partial z}\right)^2 + 2\left(\frac{\partial v}{\partial r}\right)^2 + \left(\frac{\partial u}{\partial r} + \frac{\partial v}{\partial z}\right)^2}$$
 
 Carreau fluid model
 
