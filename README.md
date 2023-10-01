@@ -82,7 +82,7 @@ $$m_A = 0.1$$
 
 ## Domain (cylindrical pipe)
 
-<p align="center">$r \in [0,R]$,  $z \in [0,L]$, $t \in [0,T]$</p>
+<p align="center">$z \in [0,L]$, $r \in [0,R]$, $t \in [0,T]$</p>
 
 ## Governing equations (cylindrical pipe)
 
