@@ -83,7 +83,9 @@ $$L = 0.5$$
 r-direction momentum equation
 
 $$\rho \left( \frac{\partial v}{\partial t} + v \frac{\partial v}{\partial r} + u \frac{\partial v}{\partial z} \right)
- = -\frac{\partial p}{\partial r}+2\frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r} + \frac{\eta}{r}\frac{\partial v}{\partial r} + \eta\frac{\partial^2 v}{\partial r^2}$$
+ = -\frac{\partial p}{\partial r}+2\frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r} + \frac{\eta}{r}\frac{\partial v}{\partial r} + \eta\frac{\partial^2 v}{\partial r^2}
+ + \frac{\partial \eta}{\partial z}\frac{\partial v}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial v}{\partial z} + \eta\frac{\partial^2 v}{\partial z^2} - \eta\frac{v}{r^2}
+ $$
 
 $$= -\frac{\partial p}{\partial x} + \frac{\partial \eta}{\partial y}\left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right) + \eta\frac{\partial^2 u}{\partial y^2} + \eta\frac{\partial^2 v}{\partial x\partial y} + 2\frac{\partial \eta}{\partial x}\frac{\partial u}{\partial x} + 2\eta\frac{\partial^2 u}{\partial x^2}$$
 
