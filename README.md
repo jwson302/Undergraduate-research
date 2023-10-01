@@ -98,7 +98,7 @@ $$\frac{\partial v}{\partial r} + \frac{\partial u}{\partial z} + \frac{v}{r} = 
 
 Shear rate
 
-$$\dot{\gamma} = \sqrt{2\left(\frac{v}{r}right\)^2+2\left(\frac{\partial u}{\partial z}\right)^2 + 2\left(\frac{\partial v}{\partial r}\right)^2 + \left(\frac{\partial u}{\partial r} + \frac{\partial v}{\partial z}\right)^2}$$
+$$\dot{\gamma} = \sqrt{2\left(\frac{v}{r}\right)^2+2\left(\frac{\partial u}{\partial z}\right)^2 + 2\left(\frac{\partial v}{\partial r}\right)^2 + \left(\frac{\partial u}{\partial r} + \frac{\partial v}{\partial z}\right)^2}$$
 
 Carreau fluid model
 
