@@ -6,6 +6,8 @@
 
 ## Governing equations (2D channel)
 
+$u$ is x direction velocity, $v$ is y direction velocity, $p$ is pressure.
+
 x-direction momentum equation
 
 $$\rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} \right)
