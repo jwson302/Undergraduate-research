@@ -73,6 +73,12 @@ $$f = 4$$
 
 $$L = 0.5$$
 
+$$T = 1$$
+
+$$u_{max} = 1.02$$
+
+$$m_A = 0.1$$
+
 
 ## Domain (cylindrical pipe)
 
@@ -108,7 +114,7 @@ $$\eta\left(\dot{\gamma}\right) = \eta_\infty + (\eta_0 - \eta_\infty)\left(1 + 
 
 $$u(z, r=R, t) = 0$$
 
-$$\frac{\partial u}{\partial r}(z, r=R, t) = 0$$
+$$\frac{\partial u}{\partial r}(z, r=0, t) = 0$$
 
 $$v(z, r=R, t) = 0$$
 
