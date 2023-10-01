@@ -85,12 +85,9 @@ r-direction momentum equation
 $$\rho \left( \frac{\partial v}{\partial t} + v \frac{\partial v}{\partial r} + u \frac{\partial v}{\partial z} \right)
  = -\frac{\partial p}{\partial r} + \eta \left(\frac{1}{r}\frac{\partial v}{\partial r} + \frac{\partial^2 v}{\partial r^2} + \frac{\partial^2 v}{\partial z^2} - \frac{v}{r^2}\right) + 2\frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial v}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial v}{\partial z}$$
 
-y-direction momentum equation
+z-direction momentum equation
 
-$$\rho \left( \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v \frac{\partial v}{\partial y} \right)
-= -\frac{\partial p}{\partial y}+2\frac{\partial}{\partial y}\left(\eta \frac{\partial v}{\partial y} \right) + \frac{\partial}{\partial x}\left(\eta \left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right)\right)$$
-
-$$= -\frac{\partial p}{\partial y} + \frac{\partial \eta}{\partial x}\left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right) + \eta\frac{\partial^2 v}{\partial x^2} + \eta\frac{\partial^2 u}{\partial x\partial y} + 2\frac{\partial \eta}{\partial y}\frac{\partial v}{\partial y} + 2\eta\frac{\partial^2 v}{\partial y^2}$$
+$$\rho \left( \frac{\partial u}{\partial t} + v \frac{\partial u}{\partial r} + u \frac{\partial u}{\partial z} \right) = -\frac{\partial p}{\partial z} + \eta \left(\frac{1}{z}\frac{\partial v}{\partial z} + \frac{\partial^2 v}{\partial z^2} + \frac{\partial^2 v}{\partial r^2} - \frac{v}{z^2}\right) + 2\frac{\partial \eta}{\partial z}\frac{\partial v}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r}$$
 
 
 
