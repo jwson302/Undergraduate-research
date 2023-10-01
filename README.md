@@ -90,8 +90,6 @@ z-direction momentum equation
 $$\rho \left( \frac{\partial u}{\partial t} + v \frac{\partial u}{\partial r} + u \frac{\partial u}{\partial z} \right) 
 = -\frac{\partial p}{\partial z} + \eta \left(\frac{1}{r}\frac{\partial u}{\partial r} + \frac{\partial^2 u}{\partial r^2} + \frac{\partial^2 u}{\partial z^2}\right) + 2\frac{\partial \eta}{\partial z}\frac{\partial u}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial u}{\partial r} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial z}$$
 
-
-
 Continuity equation
 
 $$\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 0$$
