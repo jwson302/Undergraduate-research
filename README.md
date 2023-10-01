@@ -84,12 +84,12 @@ $u$ is $z$-direction velocity, $v$ is $r$-direction velocity, $p$ is pressure.
 
 $z$-direction momentum equation
 
-$$\rho \left( \frac{\partial u}{\partial t} + v \frac{\partial u}{\partial r} + u \frac{\partial u}{\partial z} \right) 
+$$\rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial z} +v \frac{\partial u}{\partial r}\right) 
 = -\frac{\partial p}{\partial z} + \eta \left(\frac{1}{r}\frac{\partial u}{\partial r} + \frac{\partial^2 u}{\partial r^2} + \frac{\partial^2 u}{\partial z^2}\right) + 2\frac{\partial \eta}{\partial z}\frac{\partial u}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial u}{\partial r} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial z}$$
 
 $r$-direction momentum equation
 
-$$\rho \left( \frac{\partial v}{\partial t} + v \frac{\partial v}{\partial r} + u \frac{\partial v}{\partial z} \right)
+$$\rho \left( \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial z}+ v \frac{\partial v}{\partial r}\right)
  = -\frac{\partial p}{\partial r} + \eta \left(\frac{1}{r}\frac{\partial v}{\partial r} + \frac{\partial^2 v}{\partial r^2} + \frac{\partial^2 v}{\partial z^2} - \frac{v}{r^2}\right) + 2\frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial u}{\partial r} + \frac{\partial \eta}{\partial z}\frac{\partial v}{\partial z}$$
 
 Continuity equation
@@ -106,27 +106,27 @@ $$\eta\left(\dot{\gamma}\right) = \eta_\infty + (\eta_0 - \eta_\infty)\left(1 + 
 
 ## Boundary conditions (cylindrical pipe)
 
-$$u(x, y=H, t) = 0$$
+$$u(z, r=R, t) = 0$$
 
-$$u(x, y=-H, t) = 0$$
+$$\frac{\partial u}{\partial r}(z, r=R, t) = 0$$
 
-$$v(x, y=H, t) = 0$$
+$$v(z, r=R, t) = 0$$
 
-$$v(x, y=-H, t) = 0$$
+$$v(z, r=0, t) = 0$$
 
-$$u(x=0, y, t) = u_{max}\left(1+\frac{y}{H}\right)\left(1-\frac{y}{H}\right)(1+m_A\sin(2\pi ft))$$
+$$u(z=0, r, t) = u_{max}\left(1+\frac{r}{R}\right)\left(1-\frac{r}{R}\right)(1+m_A\sin(2\pi ft))$$
 
-$$v(x=0, y, t) = 0$$
+$$v(z=0, r, t) = 0$$
 
-$$p(x=L, y, t) = 0$$
+$$p(z=L, r, t) = 0$$
 
-$$u(x, y, t=0) = u_{max}\left(1+\frac{y}{H}\right)\left(1-\frac{y}{H}\right)$$
+$$u(z, r, t=0) = u_{max}\left(1+\frac{r}{H}\right)\left(1-\frac{r}{H}\right)$$
 
-$$v(x, y, t=0) = 0$$
+$$v(z, r, t=0) = 0$$
 
 ## Parameters in SI units (cylindrical pipe)
 
-$$H = 0.025$$
+$$R = 0.025$$
 
 $$\rho = 1500$$
 
@@ -141,12 +141,6 @@ $$n = 0.5$$
 $$f = 4$$
 
 $$L = 0.5$$
-
-$$T = 1$$
-
-$$u_{max} = 1.02$$
-
-$$m_A = 0.1$$
 
 $$T = 1$$
 
