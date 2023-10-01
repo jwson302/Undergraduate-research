@@ -6,7 +6,7 @@
 
 ## Governing equations (2D channel)
 
-$u$ is $x$ direction velocity, $v$ is $y$ direction velocity, $p$ is pressure.
+$u$ is $x$-direction velocity, $v$ is $y$-direction velocity, $p$ is pressure.
 
 $x$-direction momentum equation
 
@@ -80,7 +80,7 @@ $$L = 0.5$$
 
 ## Governing equations (cylindrical pipe)
 
-$u$ is $z$ direction velocity, $v$ is $r$ direction velocity, $p$ is pressure.
+$u$ is $z$-direction velocity, $v$ is $r$-direction velocity, $p$ is pressure.
 
 $z$-direction momentum equation
 
