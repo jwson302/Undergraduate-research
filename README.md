@@ -88,7 +88,7 @@ $$\rho \left( \frac{\partial v}{\partial t} + v \frac{\partial v}{\partial r} + 
 z-direction momentum equation
 
 $$\rho \left( \frac{\partial u}{\partial t} + v \frac{\partial u}{\partial r} + u \frac{\partial u}{\partial z} \right) 
-= -\frac{\partial p}{\partial z} + \eta \left(\frac{1}{z}\frac{\partial v}{\partial z} + \frac{\partial^2 v}{\partial z^2} + \frac{\partial^2 v}{\partial r^2} - \frac{v}{z^2}\right) + 2\frac{\partial \eta}{\partial z}\frac{\partial v}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial r}$$
+= -\frac{\partial p}{\partial z} + \eta \left(\frac{1}{r}\frac{\partial u}{\partial r} + \frac{\partial^2 u}{\partial r^2} + \frac{\partial^2 u}{\partial z^2}\right) + 2\frac{\partial \eta}{\partial z}\frac{\partial u}{\partial z} + \frac{\partial \eta}{\partial r}\frac{\partial u}{\partial r} + \frac{\partial \eta}{\partial r}\frac{\partial v}{\partial z}$$
 
 
 
